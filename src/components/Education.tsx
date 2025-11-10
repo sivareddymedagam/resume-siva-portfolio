@@ -14,6 +14,7 @@ const Education = () => {
       degree: "Intermediate",
       institution: "Rajiv Gandhi University of Knowledge and Technologies (IIIT Nuzvid)",
       year: "2017",
+      image: collegeImage,
     },
     {
       degree: "SSC",
@@ -29,14 +30,14 @@ const Education = () => {
           <h2 className="text-4xl font-bold mb-4">
             My <span className="gradient-primary bg-clip-text text-transparent">Education</span>
           </h2>
-          <div className="w-20 h-1 gradient-primary mx-auto mb-6"></div>
         </div>
 
         <div className="max-w-4xl mx-auto space-y-6">
           {educationList.map((edu, index) => (
             <Card
               key={index}
-              className="p-6 gradient-card shadow-card hover:shadow-elegant transition-smooth"
+              className="p-6 gradient-card shadow-card hover:shadow-elegant transition-smooth animate-fade-in-up"
+              style={{ animationDelay: `${index * 120}ms` }}
             >
               <div className="flex flex-col md:flex-row gap-6 items-start">
                 {edu.image && (
@@ -44,7 +45,7 @@ const Education = () => {
                     <img
                       src={edu.image}
                       alt={edu.institution}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover animate-float"
                     />
                   </div>
                 )}

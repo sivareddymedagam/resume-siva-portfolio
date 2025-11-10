@@ -1,6 +1,7 @@
 import { Briefcase, Calendar } from "lucide-react";
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
+import sailsLogo from "@/assets/sails-logo.svg";
 
 const Experience = () => {
   const projects = [
@@ -8,6 +9,7 @@ const Experience = () => {
       title: "I-9 HQ Migration Tooling",
       company: "Sails Software Solutions Pvt Ltd",
       period: "May 2021 - Present",
+      logo: sailsLogo,
       description:
         "Engineered a two-iteration microservice solution to streamline data migration from legacy systems to I-9 HQ cloud platform.",
       highlights: [
@@ -20,6 +22,7 @@ const Experience = () => {
     {
       title: "I-9 HQ (Headquarters)",
       company: "Sails Software Solutions Pvt Ltd",
+      logo: sailsLogo,
       description:
         "Core cloud platform for I-9 form compliance, ensuring companies adhere to federal employee eligibility regulations.",
       highlights: [
@@ -33,6 +36,7 @@ const Experience = () => {
     {
       title: "Simplifi-9 Migration Tooling",
       company: "Sails Software Solutions Pvt Ltd",
+      logo: sailsLogo,
       description:
         "AWS and Azure-focused migration tooling for legacy system data migration.",
       highlights: [
@@ -51,18 +55,22 @@ const Experience = () => {
           <h2 className="text-4xl font-bold mb-4">
             Work <span className="gradient-primary bg-clip-text text-transparent">Experience</span>
           </h2>
-          <div className="w-20 h-1 gradient-primary mx-auto mb-6"></div>
         </div>
 
         <div className="max-w-5xl mx-auto space-y-8">
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="p-8 gradient-card shadow-card hover:shadow-elegant transition-smooth"
+              className="p-8 gradient-card shadow-card hover:shadow-elegant transition-smooth animate-fade-in-up"
+              style={{ animationDelay: `${index * 120}ms` }}
             >
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-16 h-16 rounded-full gradient-primary flex items-center justify-center flex-shrink-0">
-                  <Briefcase className="h-8 w-8 text-primary-foreground" />
+                <div className="w-16 h-16 rounded-lg bg-white shadow-card ring-1 ring-border flex items-center justify-center flex-shrink-0 overflow-hidden">
+                  {project.logo ? (
+                    <img src={project.logo} alt={`${project.company} logo`} className="w-12 h-12 object-contain" />
+                  ) : (
+                    <Briefcase className="h-8 w-8 text-muted-foreground" />
+                  )}
                 </div>
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
