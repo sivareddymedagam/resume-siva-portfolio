@@ -49,11 +49,15 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 gradient-subtle">
+    <section
+  id="Experience"
+  className="py-20 bg-gradient-to-r from-pink-100 to-teal-100"
+>
+
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">
-            Work <span className="gradient-primary bg-clip-text text-transparent">Experience</span>
+            Work <span className="">Experience</span>
           </h2>
         </div>
 

@@ -105,9 +105,8 @@ All colors MUST be HSL.
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
+  /* Avoid applying border color to every element globally — this created unwanted thin lines
+     across the layout in some browsers. Only use border utilities on elements that need them. */
 
   body {
     @apply bg-background text-foreground;
