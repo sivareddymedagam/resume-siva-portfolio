@@ -1,17 +1,10 @@
 {
   "hosting": {
-    "public": "public",
-    "site": "santhi-portfolio-2ad6c-63ce4",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
     ]
   }
 }

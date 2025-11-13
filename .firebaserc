@@ -1,8 +1,5 @@
 {
   "projects": {
-    "santhi-portfolio": "santhi-portfolio-2ad6c-63ce4",
-    "default": "santhi-portfolio-2ad6c"
-  },
-  "targets": {},
-  "etags": {}
+    "default": "santhi-portfolio-2ad6c-63ce4"
+  }
 }
