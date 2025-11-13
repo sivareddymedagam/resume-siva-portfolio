@@ -1,7 +1,6 @@
 import { Briefcase, Calendar } from "lucide-react";
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
-import sailsLogo from "@/assets/sails.jpg";
 
 const Experience = () => {
   const projects = [
@@ -9,7 +8,7 @@ const Experience = () => {
       title: "I-9 HQ Migration Tooling",
       company: "Sails Software Solutions Pvt Ltd",
       period: "May 2021 - Present",
-      logo: sailsLogo,
+      logo: "/images/sails.jpg",
       description:
         "Engineered a two-iteration microservice solution to streamline data migration from legacy systems to I-9 HQ cloud platform.",
       highlights: [
@@ -22,7 +21,7 @@ const Experience = () => {
     {
       title: "I-9 HQ (Headquarters)",
       company: "Sails Software Solutions Pvt Ltd",
-      logo: sailsLogo,
+      logo: "/images/sails.jpg",
       description:
         "Core cloud platform for I-9 form compliance, ensuring companies adhere to federal employee eligibility regulations.",
       highlights: [
@@ -36,7 +35,7 @@ const Experience = () => {
     {
       title: "Simplifi-9 Migration Tooling",
       company: "Sails Software Solutions Pvt Ltd",
-      logo: sailsLogo,
+      logo: "/images/sails.jpg",
       description:
         "AWS and Azure-focused migration tooling for legacy system data migration.",
       highlights: [

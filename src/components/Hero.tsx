@@ -1,6 +1,5 @@
 import { Github, Linkedin, Mail, Download, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import profileImage from "@/assets/santhi.png";
 
 export const Hero = () => {
   const handleGetInTouch = () => {
@@ -107,7 +106,7 @@ export const Hero = () => {
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden shadow-2xl border-8 border-white">
                 <img
-                  src={profileImage}
+                  src="/images/santhi.png"
                   alt="Santhi Priya Medagam"
                   className="w-full h-full object-cover"
                 />

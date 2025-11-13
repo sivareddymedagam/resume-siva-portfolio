@@ -1,6 +1,5 @@
 import { GraduationCap } from "lucide-react";
 import { Card } from "./ui/card";
-import collegeImage from "@/assets/college.jpeg";
 import { CardHeader, CardTitle, CardDescription, CardContent } from "./ui/card";
 import { Calendar, MapPin, Award } from "lucide-react";
 import { Badge } from "./ui/badge";
@@ -13,7 +12,7 @@ export const Education = () => {
       location: "Nuzvid, Andhra Pradesh, India",
       duration: "2017 - 2021",
       completion: "August 2021",
-      logo: "../../src/assets/college.jpg.jpeg",
+      logo: "/images/college.jpg.jpeg",
       description: "Specialized in software engineering, web development, and computer science fundamentals. Built strong foundation in programming languages and software development methodologies.",
       subjects: ["Data Structures", "Software Engineering", "Database Management", "Web Technologies", "Object-Oriented Programming", "Computer Networks", "Operating Systems"]
     },
@@ -23,7 +22,7 @@ export const Education = () => {
       location: "Nuzvid, Andhra Pradesh, India",
       duration: "2015 - 2017",
       completion: "May 2017",
-       logo: "../../src/assets/college.jpg.jpeg",
+       logo: "/images/college.jpg.jpeg",
       description: "Completed intermediate education with focus on Mathematics, Physics, and Chemistry (MPC stream).",
       subjects: ["Mathematics", "Physics", "Chemistry"]
     },

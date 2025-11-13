@@ -97,7 +97,7 @@ export const Footer = () => {
                 Contact
               </button>
               <a
-                href="../../src/assets/SanthiPriyaMedagam.pdf"
+                href="/resume/SanthiPriyaMedagam.pdf"
                 download
                 className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
               >
