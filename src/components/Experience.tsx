@@ -1,7 +1,7 @@
 import { Briefcase, Calendar } from "lucide-react";
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
-import sailsLogo from "@/assets/sails-logo.svg";
+import sailsLogo from "@/assets/sails.jpg";
 
 const Experience = () => {
   const projects = [
