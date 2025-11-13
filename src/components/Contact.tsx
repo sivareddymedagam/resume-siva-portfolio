@@ -2,6 +2,7 @@ import { Mail, Linkedin, Github, MapPin, Phone } from "lucide-react";
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
 import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
@@ -13,33 +14,60 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  // 🔹 Handle form input changes
+  const { toast } = useToast();
+
+  // single handler for form input changes
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // 🔹 Send email via EmailJS
+  // Send email using EmailJS if env variables are set, otherwise fallback to mailto
   const sendEmail = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
 
+    // Read EmailJS config from Vite env vars (VITE_...)
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID as string | undefined;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string | undefined;
+    const userId = import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string | undefined;
+
+    const templateParams = {
+      from_name: formData.fullname,
+      reply_to: formData.email,
+      message: formData.message,
+    };
+
     try {
-      await emailjs.send(
-        "service_xxxxxxx", // 🟢 Your actual EmailJS Service ID
-        "template_xxxxxxx", // 🟢 Your actual EmailJS Template ID
-        {
-          fullname: formData.fullname,
-          email: formData.email,
-          message: formData.message,
-        },
-        "Xxxxx_xxxxxxxxx", // 🟢 Your actual EmailJS Public Key
-      );
-      alert("✅ Message sent successfully!");
+      if (serviceId && templateId && userId) {
+        // Use EmailJS to send the email
+        await emailjs.send(serviceId, templateId, templateParams, userId);
+
+        toast({
+          title: "Message sent",
+          description: "Thanks — your message has been sent successfully.",
+        });
+      } else {
+        // Fallback to mailto when EmailJS isn't configured
+        const subject = `Portfolio Contact from ${formData.fullname}`;
+        const body = `Name: ${formData.fullname}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
+        const mailtoLink = `mailto:santhimedagam@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
+
+        toast({
+          title: "Email Client Opened",
+          description: "Your default email client should open with the message pre-filled.",
+        });
+      }
+
+      // Reset form and close modal
       setFormData({ fullname: "", email: "", message: "" });
       setShowForm(false);
-    } catch (error) {
-      console.error("Email send error:", error);
-      alert("❌ Unable to send message. Please try again later.");
+    } catch (err) {
+      console.error("Failed to send message", err);
+      toast({
+        title: "Failed to send",
+        description: "There was an error sending your message. Try again or use the email link.",
+      });
     } finally {
       setLoading(false);
     }

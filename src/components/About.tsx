@@ -139,14 +139,18 @@ export const About = () => {
                     variant="secondary"
                     className="w-full justify-start p-3 bg-blue-100 text-blue-800 hover:bg-blue-200 dark:bg-blue-900/40 dark:text-blue-300"
                   >
-                    Google Cloud Certified – Associate Cloud Engineer
+                    <a href ="https://www.credly.com/badges/0cf36156-fa9b-4c59-8329-351694d988fa/public_url" target="_blank" rel="noopener noreferrer">
+                      Google Cloud Certified – Associate Cloud Engineer
+                    </a>
                   </Badge>
-                
+                  
                   <Badge
                     variant="secondary"
                     className="w-full justify-start p-3 bg-blue-100 text-blue-800 hover:bg-blue-200 dark:bg-blue-900/40 dark:text-blue-300"
                   >
-                    Google Cloud Certified – Professional Cloud Architect
+                    <a href ="https://www.credly.com/badges/91378757-9291-49e5-81f1-cf96bbdfa5dd/public_url" target="_blank" rel="noopener noreferrer">
+                      Google Cloud Certified – Professional Cloud Architect
+                    </a>
                   </Badge>
                 </div>
               </CardContent>
