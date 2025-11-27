@@ -10,11 +10,11 @@ export const Footer = () => {
           {/* About Section */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Venkata Sivareddy Medagam
+              Santhi Priya Medagam
             </h3>
             <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-             Computer Science Engineering graduate with hands-on experience in building ML models, IoT systems, and full-stack applications using Java, Python, React, and Node.js.
-Passionate about developing efficient backend systems, intuitive user interfaces, and real-world technology solutions.
+              Software Engineering graduate with expertise in designing and deploying scalable cloud-native solutions using Java, Spring Boot and GCP.
+              Passionate about building performant backend systems and seamless user experiences.
             </p>
           </div>
 
@@ -24,7 +24,7 @@ Passionate about developing efficient backend systems, intuitive user interfaces
               Quick Links
             </h3>
             <div className="grid grid-cols-2 gap-2">
-              {["Home", "About", "Contact", "Skills", "Education"].map(
+              {["Home", "About", "Experience", "Contact", "Skills", "Education"].map(
                 (item) => (
                   <button
                     key={item}
@@ -50,14 +50,14 @@ Passionate about developing efficient backend systems, intuitive user interfaces
             </h3>
             <div className="space-y-3">
               <a
-                href="mailto:venkatasivareddymedagam@gmail.com"
+                href="mailto:santhimedagam@gmail.com"
                 className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
               >
                 <Mail className="h-4 w-4" />
-                <span>venkatasivareddymedagam@gmail.com</span>
+                <span>santhimedagam@gmail.com</span>
               </a>
               <a
-                href="https://github.com/sivareddymedagam"
+                href="https://github.com/Santhi612"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
@@ -66,7 +66,7 @@ Passionate about developing efficient backend systems, intuitive user interfaces
                 <span>GitHub</span>
               </a>
               <a
-                href="https://www.linkedin.com/in/medagam-venkatasivareddy-609237386/"
+                href="https://www.linkedin.com/in/santhi-priya-medagam-253093172/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
@@ -82,7 +82,7 @@ Passionate about developing efficient backend systems, intuitive user interfaces
         <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-gray-600 dark:text-gray-400 flex items-center">
-              © {currentYear} Venkata Sivareddy Medagam.
+              © {currentYear} Santhi Priya Medagam.
             </p>
             <div className="flex space-x-6">
               <button
@@ -97,7 +97,7 @@ Passionate about developing efficient backend systems, intuitive user interfaces
                 Contact
               </button>
               <a
-                href="/resume/VenkataSivareddy.pdf"
+                href="/resume/SanthiPriyaMedagam.pdf"
                 download
                 className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
               >

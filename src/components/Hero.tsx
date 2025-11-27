@@ -12,8 +12,8 @@ export const Hero = () => {
   const handleDownloadResume = () => {
     // Create a temporary link to download resume
     const link = document.createElement("a");
-    link.href = "/resume/VenkataSivareddy.pdf"; // Place your resume here: public/resume/
-    link.download = "VenkataSivareddy.pdf";
+    link.href = "/resume/SanthiPriyaMedagam.pdf"; // Place your resume here: public/resume/
+    link.download = "SanthiPriyaMedagam.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -32,10 +32,12 @@ export const Hero = () => {
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                 Hi, I'm{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-                  Venkata Sivareddy Medagam
+                  Santhi Priya Medagam
                 </span>
               </h1>
-              
+              <h2 className="text-xl md:text-2xl text-slate-600 font-medium">
+                Software Engineer | Java | Spring Boot | Microservices | GCP
+              </h2>
               <div className="flex items-center gap-2 text-slate-500">
                 <MapPin size={16} />
                 <span>
@@ -45,9 +47,10 @@ export const Hero = () => {
             </div>
 
             <p className="text-lg text-slate-600 leading-relaxed max-w-xl">
-              As a Computer Science Engineering graduate, I have a solid foundation in programming, web development, and problem-solving
-               I’ve built hands-on projects in machine learning, IoT, and full-stack development using Java, Python, React, and Node.js, along with database and API integration skills
-               I’m eager to apply my abilities, collaborate effectively, and grow as a software developer.
+              Results-driven Software Engineer with 4.5 years of experience in
+              designing and deploying scalable cloud-native solutions using
+              Java, Spring Boot, GCP, and .NET. Passionate about building
+              performant backend systems and seamless user experiences.
             </p>
 
             {/* Buttons */}
@@ -74,7 +77,7 @@ export const Hero = () => {
             {/* Social Links */}
             <div className="flex gap-6 pt-4">
               <a
-                href="https://github.com/sivareddymedagam"
+                href="https://github.com/Santhi612"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
@@ -82,7 +85,7 @@ export const Hero = () => {
                 <Github size={24} className="text-slate-700" />
               </a>
               <a
-                href="https://www.linkedin.com/in/medagam-venkatasivareddy-609237386/"
+                href="https://www.linkedin.com/in/santhi-priya-medagam-253093172/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
@@ -90,7 +93,7 @@ export const Hero = () => {
                 <Linkedin size={24} className="text-blue-600" />
               </a>
               <a
-                href="mailto:venkatasivareddymedagam@gmail.com"
+                href="mailto:santhimedagam@gmail.com"
                 className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
               >
                 <Mail size={24} className="text-purple-600" />
@@ -103,8 +106,8 @@ export const Hero = () => {
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden shadow-2xl border-8 border-white">
                 <img
-                  src="/images/venkata.png"
-                  alt="Venkata SivaReddy Medagam"
+                  src="/images/santhi.png"
+                  alt="Santhi Priya Medagam"
                   className="w-full h-full object-cover"
                 />
               </div>

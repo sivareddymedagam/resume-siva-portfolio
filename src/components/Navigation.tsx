@@ -11,6 +11,7 @@ const Navigation = () => {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
+    { name: "Experience", href: "#experience" }, 
     { name: "Education", href: "#education" },   
     { name: "Contact", href: "#contact" },
   ];
@@ -79,7 +80,7 @@ const Navigation = () => {
             className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent cursor-pointer"
             onClick={() => scrollToSection("#home")}
           >
-            Venkata Sivareddy Medagam
+            Santhi Priya Medagam
           </div>
 
           {/* 🌐 Desktop Navigation */}

@@ -4,33 +4,37 @@ import { Calendar, MapPin, Award, Target, Code2, Cloud, Database, Zap } from "lu
 
 export const About = () => {
   const highlights = [
-    { icon: <Calendar className="h-5 w-5" />, label: "Experience", value: "Fresher" },
+    { icon: <Calendar className="h-5 w-5" />, label: "Experience", value: "4.5+ Years" },
     { icon: <MapPin className="h-5 w-5" />, label: "Location", value: "India" },
     { icon: <Award className="h-5 w-5" />, label: "Education", value: "B.Tech in Computer Science" },
-    { icon: <Target className="h-5 w-5" />, label: "Status", value: "Open to Work" },
+    { icon: <Target className="h-5 w-5" />, label: "Status", value: "Open to Opportunities" },
   ];
 
   const techHighlights = [
     {
-      icon: <Cloud className="h-6 w-6 text-indigo-600" />,
-      title: "Current Focus",
+      icon: <Code2 className="h-6 w-6 text-blue-600" />,
+      title: "Full-Stack Development",
       description:
-        <p>- Building scalable React.js Applications <br />
-        - Node.js development and optimization <br />
-        - Responsive UI/UX with Tailwind CSS
-        </p>
+        "Expert in Java, Spring Boot, C#, ASP.NET, and modern web technologies.",
+    },
+    {
+      icon: <Cloud className="h-6 w-6 text-indigo-600" />,
+      title: "Cloud Architecture",
+      description:
+        "Specialized in Google Cloud Platform (GCP) and AWS cloud solutions.",
     },
     {
       icon: <Database className="h-6 w-6 text-purple-600" />,
-      title: "Career Goals",
+      title: "Data Engineering",
       description:
-        <p>- Frontend development excellence<br />
-        - Full-stack development transition<br />
-        - Team Collaboration and Leadership <br />
-        - Open Source Contribution
-        </p>
+        "Proficient in BigQuery, Spanner, Firestore, and data migration processes.",
     },
-   
+    {
+      icon: <Zap className="h-6 w-6 text-pink-600" />,
+      title: "Microservices",
+      description:
+        "Experienced in Kubernetes, Apache Beam, and scalable architectures.",
+    },
   ];
 
   return (
@@ -42,10 +46,11 @@ export const About = () => {
             About Me
           </h2>
           <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-4xl mx-auto leading-relaxed">
-            Highly motivated and detail-oriented Software Engineer with hands-on experience in building machine learning models, IoT-based systems, and full-stack web applications
-             Strong foundation in Java (Core + Spring Boot),  JavaScript, and modern frameworks like React, Node.js, Express.js, Tailwind CSS, and Scikit-Learn
-              Skilled in working with MySQL, MongoDB, REST APIs, and implementing efficient, user-focused solutions
-             Passionate about learning new technologies and contributing to impactful, real-world projects as a full-stack or software developer.
+            Highly motivated and results-driven Software Engineer with 4.5 years of experience in designing,
+            developing, maintaining, and deploying scalable and robust cloud-native solutions. 
+            Proven expertise in <strong>Java (Spring Boot)</strong>, <strong>GCP</strong>, and <strong>.NET (C#)</strong>, 
+            with a strong focus on data migration, real-time data processing (Apache Dataflow/Beam), and 
+            microservices architecture (Kubernetes/GKE).
           </p>
         </div>
 
@@ -60,13 +65,19 @@ export const About = () => {
                 </h3>
                 <div className="space-y-4 text-slate-700 dark:text-slate-300 leading-relaxed">
                   <p>
-                    I specialize in building practical, user-focused applications through hands-on experience in machine learning, IoT development, and full-stack web applications. My project work includes developing predictive ML models using Scikit-Learn, creating IoT-based accessibility systems with ESP32-CAM, and building responsive web interfaces using<strong> React, Node.js, and Tailwind CSS.</strong>
+                    I specialize in designing and deploying cloud-native applications, leveraging modern frameworks 
+                    and cloud services to deliver scalable and secure enterprise-grade systems. My experience spans 
+                    across <strong>Spring Boot microservices</strong>, <strong>GCP compute and storage solutions</strong>, 
+                    and <strong>data engineering pipelines</strong> with Apache Beam and Dataflow.
                   </p>
                   <p>
-                   Recently, I developed<strong> Crop-Connect</strong>, a platform designed to help farmers easily sell crops, book workers, and rent tractors, enabling digital access to essential farming services. This project strengthened my skills in API development, frontend frameworks, and database management.
+                    I have worked extensively with <strong>Docker, Kubernetes, Firestore, and BigQuery</strong> to manage 
+                    distributed systems and real-time data streams. My focus lies in developing reliable backend systems, 
+                    implementing CI/CD workflows, and optimizing API performance.
                   </p>
                   <p>
-                   I work confidently with technologies such as <strong>Java (Core), React, Node.js, Express.js, MySQL, and MongoDB</strong>, focusing on writing clean code, improving user experience, and solving real-world problems through technology.
+                    As a collaborative team player, I also integrate AI-powered tools like <strong>GitHub Copilot </strong> 
+                    and <strong>Gemini Code Assist</strong> to accelerate development and maintain high code quality.
                   </p>
                 </div>
               </CardContent>
@@ -128,25 +139,17 @@ export const About = () => {
                     variant="secondary"
                     className="w-full justify-start p-3 bg-blue-100 text-blue-800 hover:bg-blue-200 dark:bg-blue-900/40 dark:text-blue-300"
                   >
-                    <p >
-                       Oracle - Certified Generative AI Professional
-                    </p>
+                    <a href ="https://www.credly.com/badges/0cf36156-fa9b-4c59-8329-351694d988fa/public_url" target="_blank" rel="noopener noreferrer">
+                      Google Cloud Certified – Associate Cloud Engineer
+                    </a>
                   </Badge>
                   
                   <Badge
                     variant="secondary"
                     className="w-full justify-start p-3 bg-blue-100 text-blue-800 hover:bg-blue-200 dark:bg-blue-900/40 dark:text-blue-300"
                   >
-                    <a href ="https://www.mindluster.com/student/certificate/17309145680" target="_blank" rel="noopener noreferrer">
-                      AWS Certified Developer
-                    </a>
-                  </Badge>
-                  <Badge
-                    variant="secondary"
-                    className="w-full justify-start p-3 bg-blue-100 text-blue-800 hover:bg-blue-200 dark:bg-blue-900/40 dark:text-blue-300"
-                  >
-                    <a href ="https://www.credly.com/badges/90a627b8-e2a2-4633-a070-0d631d8545e6/public_url" target="_blank" rel="noopener noreferrer">
-                      Data Analytics Essentials
+                    <a href ="https://www.credly.com/badges/91378757-9291-49e5-81f1-cf96bbdfa5dd/public_url" target="_blank" rel="noopener noreferrer">
+                      Google Cloud Certified – Professional Cloud Architect
                     </a>
                   </Badge>
                 </div>
