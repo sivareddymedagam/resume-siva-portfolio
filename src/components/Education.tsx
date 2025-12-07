@@ -8,21 +8,20 @@ export const Education = () => {
   const education = [
     {
       degree: "Bachelor of Technology in Computer Science Engineering",
-      institution: "Rajiv Gandhi University of Knowledge and Technologies (IIIT Nuzvid)",
-      location: "Nuzvid, Andhra Pradesh, India",
-      duration: "2017 - 2021",
-      completion: "August 2021",
-      logo: "/images/college.jpg.jpeg",
+      institution: "Saveetha Institute of Medical and Technical Sciences (SIMATS)",
+      location: "Chennai, Tamil Nadu, India",
+      duration: "2021 - 2025",
+      completion: "May 2025",
+      logo: "/images/College.jpg",
       description: "Specialized in software engineering, web development, and computer science fundamentals. Built strong foundation in programming languages and software development methodologies.",
       subjects: ["Data Structures", "Software Engineering", "Database Management", "Web Technologies", "Object-Oriented Programming", "Computer Networks", "Operating Systems"]
     },
     {
       degree: "Intermediate (12th Grade)",
-      institution: "Rajiv Gandhi University of Knowledge and Technologies (IIIT Nuzvid)",
-      location: "Nuzvid, Andhra Pradesh, India",
-      duration: "2015 - 2017",
-      completion: "May 2017",
-       logo: "/images/college.jpg.jpeg",
+      institution: "Sree Mitra Junior College",
+      location: "Narasaraopet, Andhra Pradesh, India",
+      duration: "2019 - 2021",
+      completion: "May 2021",
       description: "Completed intermediate education with focus on Mathematics, Physics, and Chemistry (MPC stream).",
       subjects: ["Mathematics", "Physics", "Chemistry"]
     },
@@ -30,8 +29,8 @@ export const Education = () => {
       degree: "Secondary School Certificate (10th Grade)",
       institution: "Z.P.P High School",
       location: "Pullalacheruvu, Andhra Pradesh, India",
-      duration: "2014 - 2015",
-      completion: "March 2015",
+      duration: "2018 - 2019",
+      completion: "March 2019",
       description: "Completed secondary education with strong academic performance across all subjects.",
       // subjects: ["Mathematics", "Science", "Social Studies", "English", "Telugu"]
     }

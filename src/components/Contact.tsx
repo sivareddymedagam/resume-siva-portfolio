@@ -77,14 +77,14 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "santhimedagam@gmail.com",
-      href: "mailto:santhimedagam@gmail.com",
+      value: "venkatasivareddymedagam@gmail.com",
+      href: "mailto:venkatasivareddymedagam@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 9553222470",
-      href: "tel:+919553222470",
+      value: "+91 8185026096",
+      href: "tel:+918185026096",
     },
     {
       icon: MapPin,
@@ -97,13 +97,13 @@ const Contact = () => {
       icon: Linkedin,
       label: "LinkedIn",
       value: "Connect on LinkedIn",
-      href: "https://www.linkedin.com/in/santhi-priya-medagam-253093172/",
+      href: "https://www.linkedin.com/in/medagam-venkatasivareddy-609237386/",
     },
     {
       icon: Github,
       label: "GitHub",
       value: "View my projects",
-      href: "https://github.com/Santhi612",
+      href: "https://github.com/sivareddymedagam",
     },
   ];
 

@@ -5,36 +5,24 @@ const Skills = () => {
   const skillCategories = [
     {
       category: "Languages",
-      skills: ["Java", "C#", "SQL", "JavaScript", "HTML", "CSS"],
+      skills: ["Java", "SQL", "JavaScript", "HTML", "CSS"],
     },
     {
       category: "Frameworks",
-      skills: ["Spring Boot", "ASP.NET", "Apache Beam"],
+      skills: ["React","Tailwind CSS","Node.js"],
     },
     {
       category: "Databases",
-      skills: ["Big Query", "Firestore", "Spanner", "MSSQL", "Elastic Search"],
-    },
-    {
-      category: "Cloud & DevOps",
-      skills: ["Google Cloud Platform (GCP)", "AWS S3", "Kubernetes (GKE)"],
+      skills: ["MSSQL", "MangoDB"],
     },
     {
       category: "AI & Dev Tools",
-      skills: ["GitHub Copilot", "Gemini Code Assist"],
+      skills: ["GitHub Copilot", "Gemini Code Assist","Claude AI","Perplexity AI"],
     },
     {
-      category: "Monitoring & Logging",
-      skills: ["Datadog", "Looker Studio"],
-    },
-    {
-      category: "CI/CD & Version Control",
-      skills: ["GitLab", "Jenkins", "Git"],
-    },
-    {
-      category: "Other Tools",
-      skills: ["Postman", "Bruno", "JIRA", "Confluence"],
-    },
+      category: "Version Control",
+      skills: ["GitLab", "Git"],
+    }
   ];
 
   return (
