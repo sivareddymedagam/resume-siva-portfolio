@@ -50,7 +50,7 @@ const Contact = () => {
         // Fallback to mailto when EmailJS isn't configured
         const subject = `Portfolio Contact from ${formData.fullname}`;
         const body = `Name: ${formData.fullname}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
-        const mailtoLink = `mailto:santhimedagam@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const mailtoLink = `mailto:venkatasivareddymedagam@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoLink;
 
         toast({

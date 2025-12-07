@@ -15,6 +15,6 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_SANTHI_PORTFOLIO_2AD6C }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_SIVA_PORTFOLIO_B8225 }}
           channelId: live
-          projectId: santhi-portfolio-2ad6c
+          projectId: siva-portfolio-b8225
